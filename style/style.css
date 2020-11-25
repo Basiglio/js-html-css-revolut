@@ -26,19 +26,19 @@ header {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
 }
 .header_left {
   width: 30%;
   height: 100%;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   line-height: 100px;
 }
 .header_right {
   width: 70%;
   height: 100%;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   line-height: 100px;
   text-align: right;
 }
@@ -59,30 +59,13 @@ header {
   color: black;
 }
 /* IMPOSTAZIONI RIGHT HEADER */
-.header_right li {
-  display: inline-block;
-  padding-right: 30px;
-  color: grey;
-  cursor: pointer;
+.header_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.header_right li:hover {
-  color: black;
-}
-.header_right li a {
-  border-radius: 15px;
-  padding: 15px 25px;
-}
-#accedi {
-  background-color: #DADBDB;
-  color: black;
-}
-#accedi:hover {
-  background-color: lightgrey;
-}
-#scarica {
-  background-color: black;
-  color: white;
-}
-#scarica:hover {
-  background-color: #3E4143
+.tab_index {
+  width: 40px;
+  height: 50px;
+  border: 1px solid black;
 }
