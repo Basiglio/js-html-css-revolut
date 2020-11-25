@@ -3,6 +3,9 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /* IMPOSTAZIONI GENERICHE PER LISTE */
 .list_style {
   list-style: none;
@@ -23,19 +26,19 @@ header {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
 }
 .header_left {
   width: 30%;
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   line-height: 100px;
 }
 .header_right {
   width: 70%;
   height: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   line-height: 100px;
   text-align: right;
 }
@@ -43,6 +46,7 @@ header {
 .header_left img {
   width: 50px;
   vertical-align: middle;
+  cursor: pointer;
 }
 .header_left li {
   display: inline-block;
@@ -51,8 +55,34 @@ header {
 .header_left ul li #black {
   color: black;
 }
+.header_left ul li a:last-child:hover {
+  color: black;
+}
 /* IMPOSTAZIONI RIGHT HEADER */
 .header_right li {
   display: inline-block;
   padding-right: 30px;
+  color: grey;
+  cursor: pointer;
+}
+.header_right li:hover {
+  color: black;
+}
+.header_right li a {
+  border-radius: 15px;
+  padding: 15px 25px;
+}
+#accedi {
+  background-color: #DADBDB;
+  color: black;
+}
+#accedi:hover {
+  background-color: lightgrey;
+}
+#scarica {
+  background-color: black;
+  color: white;
+}
+#scarica:hover {
+  background-color: #3E4143
 }
