@@ -1,10 +1,10 @@
 $(document).ready(function () {
   // COLLEGO IL CLICK AI TAB INDEX
-  $(".tab_index span").mouseenter(
+  $(".tab_index span").click(
     function (){
-      console.log("passo sullo span");
+      console.log("clicco sullo span");
      // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
-     $(this).children().removeClass("inactive");
+     $(this).removeClass("inactive");
     }
   );
 });
