@@ -69,9 +69,30 @@ header {
   margin-left: 30px;
   text-align: center;
   line-height: 50px;
+  color: grey;
+  cursor: pointer;
+}
+.tab_index:hover {
+  color: black;
 }
 .header_right a {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 15px;
+}
+.header_right a:first-of-type {
+  margin-right: 10px;
+  margin-left: 60px;
+  background-color: #DADBDB;
+  color: black;
+  padding: 14px;
+}
+.header_right a:first-of-type:hover {
+  background-color: lightgrey;
+}
+.header_right a:last-of-type {
+  background-color: black;
+  color: white;
+  padding: 18px;
+}
+.header_right a:last-of-type:hover {
+  background-color: #3E4143;
 }
