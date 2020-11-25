@@ -1,17 +1,43 @@
 $(document).ready(function () {
-  // COLLEGO IL CLICK AI TAB INDEX
-  $(".tab_index span").mouseenter(
+
+
+  // COLLEGO IL MOUSE ENTER A SUBSCRIPTION
+  $("#subscription").mouseenter(
     function (){
-      console.log("passo sullo span");
      // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
-     $(".dropdown").removeClass("inactive");
+     $(".dropdown_subscription").removeClass("inactive");
     }
   );
-  $(".tab_index span").mouseleave(
+  $("#subscription").mouseleave(
     function (){
-      console.log("passo sullo span");
       // RIMETTO CLASSE INACTIVE
-     $(".dropdown").addClass("inactive");
+     $(".dropdown_subscription").addClass("inactive");
+    }
+  );
+  // COLLEGO IL MOUSE ENTER A WHO
+  $("#who").mouseenter(
+    function (){
+     // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
+     $(".dropdown_who").removeClass("inactive");
+    }
+  );
+  $("#who").mouseleave(
+    function (){
+      // RIMETTO CLASSE INACTIVE
+     $(".dropdown_who").addClass("inactive");
+    }
+  );
+  // COLLEGO IL MUOSE ENTER A HELP
+  $("#help").mouseenter(
+    function (){
+     // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
+     $(".dropdown_help").removeClass("inactive");
+    }
+  );
+  $("#help").mouseleave(
+    function (){
+      // RIMETTO CLASSE INACTIVE
+     $(".dropdown_help").addClass("inactive");
     }
   );
 });
