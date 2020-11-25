@@ -78,21 +78,39 @@ header {
 .header_right a {
   border-radius: 15px;
 }
-.header_right a:first-of-type {
+.header_right #submit {
   margin-right: 10px;
   margin-left: 60px;
   background-color: #DADBDB;
   color: black;
   padding: 14px;
 }
-.header_right a:first-of-type:hover {
+.header_right #submit:hover {
   background-color: lightgrey;
 }
-.header_right a:last-of-type {
+.header_right #download {
   background-color: black;
   color: white;
   padding: 18px;
 }
-.header_right a:last-of-type:hover {
+.header_right #download:hover {
   background-color: #3E4143;
+}
+/* COSTRUTTO DROPDOWN */
+.dropdown {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  position: absolute;
+  padding: 8px;
+}
+.dropdown li a:hover {
+  color: black;
+}
+#dropdown_who {
+  display: none;
+}
+#dropdown_help {
+  display: none;
 }
