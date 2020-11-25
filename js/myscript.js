@@ -5,7 +5,7 @@ $(document).ready(function () {
   $("#subscription").mouseenter(
     function (){
      // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
-     $(".dropdown_subscription").removeClass("inactive");
+    $(".dropdown_subscription").removeClass("inactive");
     }
   );
   $("#subscription").mouseleave(
@@ -14,6 +14,7 @@ $(document).ready(function () {
      $(".dropdown_subscription").addClass("inactive");
     }
   );
+
   // COLLEGO IL MOUSE ENTER A WHO
   $("#who").mouseenter(
     function (){
@@ -27,6 +28,7 @@ $(document).ready(function () {
      $(".dropdown_who").addClass("inactive");
     }
   );
+
   // COLLEGO IL MUOSE ENTER A HELP
   $("#help").mouseenter(
     function (){
@@ -38,6 +40,20 @@ $(document).ready(function () {
     function (){
       // RIMETTO CLASSE INACTIVE
      $(".dropdown_help").addClass("inactive");
+    }
+  );
+
+  // COLLEGO IL MUOSE ENTER A FUNCTIONALITY
+  $("#functionality").mouseenter(
+    function (){
+     // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
+     $(".dropdown_functionality").removeClass("inactive");
+    }
+  );
+  $("#functionality").mouseleave(
+    function (){
+      // RIMETTO CLASSE INACTIVE
+     $(".dropdown_functionality").addClass("inactive");
     }
   );
 });
