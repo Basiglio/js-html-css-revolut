@@ -1,16 +1,10 @@
 $(document).ready(function () {
-
-  // IMPOSTO IL MOUSEHOVER SU SUBSCRIPTION
-  $("#subscription").mouseover(
-    function () {
-      // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
-      $("#dropdown_subscription").removeClass("inactive");
-    }
-  );
-  $("#subscription").mouseout(
-    function () {
-      // AGGIUNGO CLASSE ACTIVE(DISPLAY BLOCK)
-      $("#dropdown_subscription").addClass("active");
+  // COLLEGO IL CLICK AI TAB INDEX
+  $(".tab_index span").mouseenter(
+    function (){
+      console.log("passo sullo span");
+     // RIMUOVO CLASSE INACTIVE(DISPLAY NONE)
+     $(this).children().removeClass("inactive");
     }
   );
 });
