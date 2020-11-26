@@ -10,5 +10,16 @@ $(document).ready(
         $(this).children(".dropdown").addClass("inactive");
       }
     )
+    // IMPOSTO IL CLICK
+    // $(".tab_index").(
+    //   function () {
+    //     $(this).children(".dropdown").removeClass("inactive");
+    //   }
+    // )
+    // $(".tab_index").(
+    //   function () {
+    //     $(this).children(".dropdown").addClass("inactive");
+    //   }
+    // )
   }
 );
