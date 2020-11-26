@@ -2,24 +2,20 @@ $(document).ready(
   function ()  {
     $(".tab_index").mouseenter(
       function () {
-        $(this).children(".dropdown").removeClass("inactive");
+        $(this).children(".dropdown").addClass("active");
       }
     )
     $(".tab_index").mouseleave(
       function () {
-        $(this).children(".dropdown").addClass("inactive");
+        $(this).children(".dropdown").removeClass("active");
       }
     )
     // IMPOSTO IL CLICK
-    // $(".tab_index").(
-    //   function () {
-    //     $(this).children(".dropdown").removeClass("inactive");
-    //   }
-    // )
-    // $(".tab_index").(
-    //   function () {
-    //     $(this).children(".dropdown").addClass("inactive");
-    //   }
-    // )
+    $(".tab_index").click(
+      function () {
+        $(this).siblings(".tab_index").children(".dropdown").removeClass("active");
+        $(this).children(".dropdown").toggleClass("active");
+      }
+    )
   }
 );
